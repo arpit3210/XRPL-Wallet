@@ -2,7 +2,8 @@ import { Client, Wallet, classicAddressToXAddress } from 'xrpl';
 
 export default async function getWalletDetails({ client }) {
     try {
-        const wallet = Wallet.fromSeed(process.env.SEED); // Convert the seed to a wallet : https://xrpl.org/cryptographic-keys.html
+        console.log(process.env.SEED);
+        const wallet = Wallet.fromSeed("sEd7kQD1K793y7t7N9ea1nVB11hC33L"); // Convert the seed to a wallet : https://xrpl.org/cryptographic-keys.html
 
         // Get the wallet details: https://xrpl.org/account_info.html
         const {
