@@ -1,8 +1,12 @@
 {
+    "version": "1.0.0",
+    "license": "MIT",
     "name": "simple-xrpl-wallet",
     "type": "module",
     "scripts": {
-        "dev": "vite"
+        "dev": "vite",
+        "install": "yarn install",
+        "build": "yarn build"
     },
     "devDependencies": {
         "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
